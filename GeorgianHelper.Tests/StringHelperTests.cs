@@ -146,6 +146,7 @@ namespace GeorgianHelper.Tests
         }
 
         [Theory]
+        [InlineData("აი ია", "ai ia")]
         [InlineData("ტესტი", "testi")]
         [InlineData("დიგი2200", "digi2200")]
         [InlineData("ჩახმახი", "chakhmakhi")]

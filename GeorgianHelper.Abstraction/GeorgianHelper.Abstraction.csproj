@@ -16,6 +16,7 @@ string GetNumberName(long number, string separator = "");</PackageReleaseNotes>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <FileVersion>1.0.1.0</FileVersion>
     <Version>1.0.1</Version>
+    <Copyright>Copyright © 2020</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
