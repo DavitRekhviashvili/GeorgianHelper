@@ -7,6 +7,15 @@
     <RepositoryUrl>https://github.com/DavitRekhviashvili/GeorgianHelper.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>GeorgianHelper.Abstraction, NumberToNumberName, GeoToLat, ქართული ხელსაწყო, GeorgianHelper აბსტრაგირება</PackageTags>
+    <PackageReleaseNotes>IStringHelper
+string GeoUnicodeToLat(string geoUnicodeText);
+string GetNumberName(long number, string separator = "");</PackageReleaseNotes>
+    <Authors>DavitRekhviashvili</Authors>
+    <Description>ბიბლიოთეკა განკუთვნილია GeorgianHelper -ის აბსტრაგირებისთვის</Description>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
