@@ -153,6 +153,18 @@ namespace GeorgianHelper.Tests
         [InlineData("ჟუჟუნა", "djudjuna")]
         [InlineData("7 ჯუჯა", "7 juja")]
         [InlineData("გულთგონთახარ?", "gultgontakhar?")]
+        [InlineData("ყაყაჩო", "yayacho")]
+        [InlineData("ძუა", "dzua")]
+        [InlineData("ცა", "ca")]
+        [InlineData("შაშვი", "shashvi")]
+        [InlineData("ღვინო", "gvino")]
+        [InlineData("ქვეყანა", "qveyana")]
+        [InlineData("ფანქარი", "fanqari")]
+        [InlineData("პეპელა", "pepela")]
+        [InlineData("კრაზანა", "krazana")]
+        [InlineData("ბაყაყი", "bayayi")]
+        [InlineData("ჭრიჭინა", "chrichina")]
+        [InlineData("ჰამაკი", "hamaki")]
         public void GeoUnicodeToLat(string geoText, string latText)
         {
             //Arrange

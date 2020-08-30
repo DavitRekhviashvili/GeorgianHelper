@@ -222,13 +222,9 @@ for (i = 0, l = charts.length; i < l; i++) {
 
 var assemblies = [
   {
-    "name": "iNeed.Common.GeorgianHelper",
+    "name": "GeorgianHelper",
     "classes": [
-      { "name": "iNeed.Common.GeorgianHelper.StringHelper", "rp": "iNeed.Common.GeorgianHelper_StringHelper.html", "cl": 237, "ucl": 103, "cal": 340, "tl": 492, "ct": "LineCoverage", "mc": "-", "cb": 175, "tb": 255, "lch": [], "bch": [], "hc": [] },
-    ]},
-  {
-    "name": "iNeed.Common.GeorgianHelper.Abstraction",
-    "classes": [
+      { "name": "GeorgianHelper.StringHelper", "rp": "GeorgianHelper_StringHelper.html", "cl": 313, "ucl": 25, "cal": 338, "tl": 489, "ct": "LineCoverage", "mc": "-", "cb": 211, "tb": 253, "lch": [], "bch": [], "hc": [] },
     ]},
 ];
 
@@ -240,17 +236,17 @@ var riskHotspotMetrics = [
 
 var riskHotspots = [
   {
-    "assembly": "iNeed.Common.GeorgianHelper", "class": "iNeed.Common.GeorgianHelper.StringHelper", "reportPath": "iNeed.Common.GeorgianHelper_StringHelper.html", "methodName": "GetToNineteenName(System.String)", "methodShortName": "GetToNineteenName(...)", "fileIndex": 0, "line": 148,
+    "assembly": "GeorgianHelper", "class": "GeorgianHelper.StringHelper", "reportPath": "GeorgianHelper_StringHelper.html", "methodName": "GetToNineteenName(System.String)", "methodShortName": "GetToNineteenName(...)", "fileIndex": 0, "line": 145,
     "metrics": [
       { "value": 50, "exceeded": true },
     ]},
   {
-    "assembly": "iNeed.Common.GeorgianHelper", "class": "iNeed.Common.GeorgianHelper.StringHelper", "reportPath": "iNeed.Common.GeorgianHelper_StringHelper.html", "methodName": "GeoUnicodeToLat(System.String)", "methodShortName": "GeoUnicodeToLat(...)", "fileIndex": 0, "line": 10,
+    "assembly": "GeorgianHelper", "class": "GeorgianHelper.StringHelper", "reportPath": "GeorgianHelper_StringHelper.html", "methodName": "GeoUnicodeToLat(System.String)", "methodShortName": "GeoUnicodeToLat(...)", "fileIndex": 0, "line": 10,
     "metrics": [
-      { "value": 38, "exceeded": true },
+      { "value": 36, "exceeded": true },
     ]},
   {
-    "assembly": "iNeed.Common.GeorgianHelper", "class": "iNeed.Common.GeorgianHelper.StringHelper", "reportPath": "iNeed.Common.GeorgianHelper_StringHelper.html", "methodName": "GetThreeSignDigitName(System.String,System.String)", "methodShortName": "GetThreeSignDigitName(...)", "fileIndex": 0, "line": 197,
+    "assembly": "GeorgianHelper", "class": "GeorgianHelper.StringHelper", "reportPath": "GeorgianHelper_StringHelper.html", "methodName": "GetThreeSignDigitName(System.String,System.String)", "methodShortName": "GetThreeSignDigitName(...)", "fileIndex": 0, "line": 194,
     "metrics": [
       { "value": 33, "exceeded": true },
     ]},
