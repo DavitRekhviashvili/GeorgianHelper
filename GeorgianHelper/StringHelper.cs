@@ -6,6 +6,11 @@ namespace GeorgianHelper
 {
     public class StringHelper:IStringHelper
     {
+        /// <summary>
+        /// ქართული უნიკოდ ტექსტის ლათინურ ასოებიან ტექსტად კონვერტირება
+        /// </summary>
+        /// <param name="geoUnicodeText">ქართული უნიკოდ ტექსტი, რომელიც დაკონვერტირდება ლათინურში</param>
+        /// <returns>დაკონვერტირებული ლათინური ტექსტი</returns>
         public string GeoUnicodeToLat(string geoUnicodeText)
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -121,6 +126,17 @@ namespace GeorgianHelper
         }
 
         #region DigitToWord
+        /// <summary>
+        /// რიცხვის სახელის დასაგენერირებელი ფუნქცია
+        /// </summary>
+        /// <param name="number">რიცხვი რისი სახელიც გვაინტერესებს</param>
+        /// <param name="separator">სახელში გამყოფი ობიექტი, (მაგ: თუ separator = "_" მაშინ რიცხვის 2021 სახელი იქნება "ორი_ათას_ოცდა_ორი" )</param>
+        /// <returns>მიწოდებული რიცხვის სახელი</returns>
+        public string GetNumberName(long number, string separator = "")
+        {
+            var result = number == 0 ? "ნული" : GetNineteenSignDigitName(number.ToString(), separator);
+            return result;
+        }
         string GetOneSignDigitName(string digit)
         {
             if (digit.Length == 1)
@@ -477,12 +493,6 @@ namespace GeorgianHelper
                 return GetEightteenSignDigitName(number, separator);
             }
             return "";
-        }
-
-        public string GetNumberName(long number, string separator = "")
-        {
-            var result = number == 0 ? "ნული" : GetNineteenSignDigitName(number.ToString(), separator);
-            return result;
         }
         #endregion
     }
