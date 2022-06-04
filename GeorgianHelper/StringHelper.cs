@@ -412,7 +412,7 @@ namespace GeorgianHelper
             }
             return "";
         }
-        string GetFiveteenSignDigitName(string number, string separator)
+        string GetFifteenSignDigitName(string number, string separator)
         {
             if (number.Length == 15)
             {
@@ -435,13 +435,13 @@ namespace GeorgianHelper
                 var substringWithOutFirst = number.Substring(1);
                 switch (number[0])
                 {
-                    case '0': return GetFiveteenSignDigitName(substringWithOutFirst, separator);
-                    default: return $"{GetFiveteenSignDigitName(number.Substring(0, 1), separator)}{separator}კვადრილიონ{separator}{GetFiveteenSignDigitName(substringWithOutFirst, separator)}";
+                    case '0': return GetFifteenSignDigitName(substringWithOutFirst, separator);
+                    default: return $"{GetFifteenSignDigitName(number.Substring(0, 1), separator)}{separator}კვადრილიონ{separator}{GetFifteenSignDigitName(substringWithOutFirst, separator)}";
                 }
             }
             else if (number.Length < 16)
             {
-                return GetFiveteenSignDigitName(number, separator);
+                return GetFifteenSignDigitName(number, separator);
             }
             return "";
         }
@@ -452,7 +452,7 @@ namespace GeorgianHelper
                 switch (number[0])
                 {
                     case '0': return GetSixteenSignDigitName(number.Substring(1), separator);
-                    default: return $"{GetFiveteenSignDigitName(number.Substring(0, 2), separator)}{separator}კვადრილიონ{separator}{GetFiveteenSignDigitName(number.Substring(2), separator)}";
+                    default: return $"{GetFifteenSignDigitName(number.Substring(0, 2), separator)}{separator}კვადრილიონ{separator}{GetFifteenSignDigitName(number.Substring(2), separator)}";
                 }
             }
             else if (number.Length < 17)
@@ -468,7 +468,7 @@ namespace GeorgianHelper
                 switch (number[0])
                 {
                     case '0': return GetSeventeenSignDigitName(number.Substring(1), separator);
-                    default: return $"{GetFiveteenSignDigitName(number.Substring(0, 3), separator)}{separator}კვადრილიონ{separator}{GetFiveteenSignDigitName(number.Substring(3), separator)}";
+                    default: return $"{GetFifteenSignDigitName(number.Substring(0, 3), separator)}{separator}კვადრილიონ{separator}{GetFifteenSignDigitName(number.Substring(3), separator)}";
                 }
             }
             else if (number.Length < 18)
