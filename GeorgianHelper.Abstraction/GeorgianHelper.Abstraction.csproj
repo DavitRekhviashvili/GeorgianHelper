@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Company>GeorgiaCountry</Company>
+    <Product>GeorgianHelper</Product>
+    <RepositoryUrl>https://github.com/DavitRekhviashvili/GeorgianHelper.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>GeorgianHelper.Abstraction, NumberToNumberName, GeoToLat, ქართული ხელსაწყო, GeorgianHelper აბსტრაგირება</PackageTags>
+    <PackageReleaseNotes>IStringHelper
+string GeoUnicodeToLat(string geoUnicodeText);
+string GetNumberName(long number, string separator = "");</PackageReleaseNotes>
+    <Authors>DavitRekhviashvili</Authors>
+    <Description>ბიბლიოთეკა განკუთვნილია GeorgianHelper -ის აბსტრაგირებისთვის</Description>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>2.0.1</Version>
+    <Copyright>Copyright © 2020</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <ErrorReport>none</ErrorReport>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+</Project>

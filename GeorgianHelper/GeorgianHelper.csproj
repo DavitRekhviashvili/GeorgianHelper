@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Authors>DavitRekhviashvili</Authors>
+    <Company>GeorgiaCountry</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/DavitRekhviashvili/GeorgianHelper.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>GeorgianHelper, NumberToNumberName, GeoToLat, ქართული ხელსაწყო</PackageTags>
+    <PackageReleaseNotes>StringHelper:IStringHelper აქვს ფუნქციები:
+
+string GeoUnicodeToLat(string geoUnicodeText)
+
+string GetNumberName(long number, string separator = "")
+
+string GeoUnicodeToLat(string geoUnicodeText) გამოიყენება ქართული ტექსტის ლათინურში გადასაკონვერტირებლად, მისი ძირითადი გამოყენება არის მოკლე ტექსტური შეტყობინებების გაგზავნისას ქართული უნიკოდი ტექსტი როცა გვჭირდება გავგზავნოთ კათინური ასოებით.
+
+string GetNumberName(long number, string separator = "") გამოიყენება long ტიპის მნიშვნელობის რიცხვის ქართული სახელწოდების დასაგენერირებლად მისი ძირითადი გამოყენება არის ფინანსურ სფეროში სადაც საჭიროა რიცხვი როგორც რიცხვად ისე სიტყვიერად იყოს წარმოდგენილი.</PackageReleaseNotes>
+    <Description>მიზანია შევქმნათ საერთო ბიბლიოთეკა რომელშიც დავამატებთ ქართულ თავისებურებებით დამახასიათებელ ფუნქციებს.
+ბიბლიოთეკა არის უფასო და იქნება ყოველთვის უფასო პირადი თუ კომერციული მიზნებისთვის. მხოლოდ აკრძალულია მისი გადატანა და პარალელური ბიბლიოთეკის წარმოება.
+ის არის ღია ყველასთვის მასში არის საშუალება ყველამ შევიტანოთ ჩვენი წვლილი.
+ყველას ვისაც რაიმე იდეა გექნებათ შეგიძლიათ დაამატოთ აქ როგორც ახალი დამხმარე ხელსაწყო.
+გაუადვილოთ ერთმანეთს სამუშაო პროცესი, დავზოგოთ ენერგია და დრო ჩვენი შეწირულობებით.</Description>
+    <Version>2.0.1</Version>
+    <Copyright>Copyright © 2020</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <ErrorReport>none</ErrorReport>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeorgianHelper.Abstraction\GeorgianHelper.Abstraction.csproj" />
+  </ItemGroup>
+
+</Project>

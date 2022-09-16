@@ -1,0 +1,2 @@
+dotnet nuget push GeorgianHelper.2.0.1.nupkg -k oy2lnr2ja67mqmh6s3lq4x42r6khf7jurduyn3jwevj2xa -s https://api.nuget.org/v3/index.json
+dotnet nuget push GeorgianHelper.Abstraction.2.0.1.nupkg -k oy2lnr2ja67mqmh6s3lq4x42r6khf7jurduyn3jwevj2xa -s https://api.nuget.org/v3/index.json
